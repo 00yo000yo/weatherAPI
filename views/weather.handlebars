@@ -3,7 +3,7 @@
 <div class='card-group'>
 
   <div class='card border border-1 text-center'>
-    <a href=''>
+    <a href='/search?location=kaohsiung'>
       <img
         src='https://images.chinatimes.com/newsphoto/2023-01-06/1024/20230106004870.jpg'
         class='card-img-top'
@@ -17,7 +17,7 @@
   </div>
 
   <div class='card border border-1 text-center'>
-    <a href=''>
+    <a href='/search?location=taipei'>
       <img
         src='https://a.cdn-hotels.com/gdcs/production57/d1344/58e63eaa-73ec-48f3-828a-c287ee898ac3.jpg?impolicy=fcrop&w=1600&h=1066&q=medium'
         class='card-img-top border border-light border-3"'
@@ -31,7 +31,7 @@
   </div>
 
   <div class='card border border-1 text-center'>
-    <a href=''><img
+    <a href='/search?location=seoul'><img
         src='https://i2.wp.com/www.agoda.com/wp-content/uploads/2019/05/Seoul-itinerary-Seoul-Bukchon-Hanok-Village.jpg?ssl=1'
         class='card-img-top'
         alt='...'
@@ -43,7 +43,7 @@
   </div>
 
   <div class='card border border-1 text-center'>
-    <a href=''>
+    <a href='/search?location=tokyo'>
       <img
         src='https://static.gltjp.com/glt/prd/data/article/21000/20183/20220816_214717_58d15bee_w1920.jpg'
         class='card-img-top'
@@ -57,20 +57,29 @@
 
 </div>
 
+{{! <video autoplay>
+  <source
+    src='https://videos.pexels.com/video-files/856463/856463-hd_1920_1080_30fps.mp4'
+    type='video/mp4'
+  />
+</video> }}
+
 <div class='container border mt-5'>
 
   <div class='row'>
     <div class='col'>
-      <p class=''>溫度：{{temp}}</p>
+      <p class='h3 mt-1'>溫度：{{temp}}</p>
       <p>{{location}}</p>
-      <p>{{date}}</p>
+      <p>最高溫度：{{highTemp}}</p>
+      <p>最低溫度：{{lowTemp}}</p>
+      <p>目前時間：{{date}}</p>
+
     </div>
     <div class='col'>
 
     </div>
     <div class='col'>
-      <div class='col align-self-center'> icon</div>
-
+      <img src='{{weatherIcon}}' style='width:50%' />
     </div>
 
   </div>

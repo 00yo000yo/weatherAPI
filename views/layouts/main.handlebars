@@ -20,12 +20,13 @@
         class='container-fluid d-flex justify-content-evenly align-items-center'
       >
         <a class='navbar-brand'>天氣查詢器</a>
-        <form class='d-flex pt'>
+        <form class='d-flex pt' action='/search'>
           <input
             class='form-control me-2'
             type='search'
             placeholder='可以在這邊直接搜尋'
             aria-label='Search'
+            name='location'
           />
           <button class='btn btn-outline-success' type='submit'>Search</button>
         </form>
@@ -51,8 +52,5 @@
       integrity='sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/'
       crossorigin='anonymous'
     ></script>
-    <script>
-      console.log(response)
-    </script>
   </body>
 </html>

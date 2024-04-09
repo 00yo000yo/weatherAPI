@@ -10,6 +10,7 @@ const weatherToken = process.env.OPENWEATHER_TOKEN
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
+app.use(express.static('public'))
 
 app.get('/', (req, res) => {
   axios
